@@ -1,0 +1,54 @@
+<!-- <h1>Add an intern </h1>
+<label>Name</label>
+<form>
+    <mat-form-field>
+    <input 
+        required minlength="4"
+        matInput
+        name="inputInternName"
+        id="inputInternName"
+        [(ngModel)]="name"
+        #inputInternName="ngModel"
+        placeholder="Enter the name"
+    />
+
+    <div *ngIf="inputInternName.invalid && (inputInternName.dirty || inputInternName.touched)"
+    class="alert">
+
+        <div *ngIf="inputInternName.errors?.['required']">
+            Name is required.
+        </div>
+        <div *ngIf="inputInternName.errors?.['minlength']">
+            Name must be at least 4 characters long.
+        </div>
+    </div>
+    
+    </mat-form-field>
+    <br>
+    <label>Age</label>
+    </form>
+     <mat-form-field>
+        <input
+        matInput
+        name="inputInternAge"
+        id="inputInternAge"
+        [(ngModel)]="age"
+        #inputInternName="ngModel"
+        placeholder="Enter the age"
+    />
+    </mat-form-field>
+    <br>
+    <label>Date of birth</label>
+    <br> -->
+    <!-- <mat-form-field appearance="fill">
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Start date">
+          <input matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>  -->
+    <br>
+
+<button mat-button routerLink="interns" (click)="editIntern()">edit</button>

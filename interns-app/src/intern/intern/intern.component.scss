@@ -1,0 +1,18 @@
+.note-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+
+    .addcard{
+        background-color: rgb(238, 208, 153);
+        width: 10px; 
+        height: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 1250px;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
