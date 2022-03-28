@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InternsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:InternsAPI.Controllers.InternsController.GetInterns">
+            <summary>
+            Get all interns.
+            </summary>
+        </member>
+        <member name="M:InternsAPI.Controllers.InternsController.GetInternById(System.String)">
+            <summary>
+            Get one intern by InternId.
+            </summary>
+            <response code="200">Success getting one intern from the list.</response>
+            <response code="404">Getting the intern failed because of invalid id.</response>
+            <returns>Returns one intern from the list</returns>
+        </member>
+        <member name="M:InternsAPI.Controllers.InternsController.CreateNote(InternsAPI.Models.Intern)">
+            <summary>
+            Add a new intern.
+            </summary>
+            <response code="200">Success creating one intern.</response>
+            <response code="201">Success getting location header in post response.</response>
+        </member>
+        <member name="M:InternsAPI.Controllers.InternsController.UpdateInternById(InternsAPI.Models.Intern)">
+            <summary>
+            Update intern by InternId.
+            </summary>
+            <response code="200">Success updating intern.</response>
+            <response code="404">Updating the intern failed because of invalid id.</response>
+            <returns>Updated intern</returns>
+        </member>
+        <member name="M:InternsAPI.Controllers.InternsController.DeleteIntern(System.String)">
+            <summary>
+            Delete intern by InternId.
+            </summary>
+            <response code="200">Success deleting intern.</response>
+            <response code="404">Deleting the intern failed because of invalid id.</response>
+            <returns>Ok. The intern was deleted</returns>
+        </member>
+    </members>
+</doc>
